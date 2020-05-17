@@ -1,0 +1,45 @@
+Codenation: Start-up nascida em 2017 com a missão de tornar a educação na área de tecnologia financeiramente viável
+e acessível à todos os lugares direcionado às necessidades do mercado. Conectando estudantes e profissionais em
+transição de carreira à empresas na busca de novos talentos.
+
+AceleraDev: Programa de ensino de tecnologia específica, Front-end, backend, mobile, Data science, python de duração de 10 semanas
+programas com formato prensencial ou online. Possui empresas apoiadoras que dão bolsas de estudo.
+Programa funciona com base no challenge based learning onde cada semana as pessoas realizam um desafio técnico
+e um projeto prático que é apresentada à empresa apoiadora do programa.
+
+Vídeo com explicação da plataforma
+
+Possui quizes ou projetos para avaliar suas habilidades no final da semana.
+
+Possui um aplicativo CLI para correção
+
+Ementa:
+- Módulo 01: Fundamentos da Linguagem
+Fundamentos básicos como estruturas de dados, repetição, decisão, formatação de strings e padronização usando PEP8 para tornar o código legível
+    Tópico 1
+    - Tipos Primitivos
+    - Tipos Built-in
+    - Estruturas de decisão
+    - Estruturas de repetição
+    - formatação de string
+    Tópico 2
+    - Como escrever código Python usando PEP8
+
+- Módulo 02: Funções e Classes
+Falar sobre orientação à objetos (herança, composição, polimorfismo, adição de métodos nas classes)
+- Módulo 03: Testes com Python
+Realização de testes unitários e outros níveis de teste e usar o pytest praticando o TDD
+- Módulo 04: Backend com Python
+Protocolos de Comunicação HTTP TCP, conceitos básicos de arquiteturas distribuídas, segurança de API's e sistemas web
+- Módulo 05: Django
+Detalhes sobre o Django e como configurar URLS, views, validações
+- Módulo 06: Django REST Framework
+Para Criação da API de forma muito simples
+- Módulo 07: Persistência e Cache
+Trabalhar com a ORM do Django e cachear dados para melhorar o desempenho
+- Módulo 08: Qualidade
+Documentação usando Swagger
+- Módulo 09: Deploy
+Como fazer o deploy de tudo que estudamos, como fazer um deploy em uma solução de cloud e como fazer Integração contínua
+assim quando fizermos um commit -> iremos buildar e enviar para produção sem precisar de intervenção humana.
+- Módulo 10: Projeto Final e Apresentação
