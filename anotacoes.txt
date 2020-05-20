@@ -27,6 +27,14 @@ Fundamentos básicos como estruturas de dados, repetição, decisão, formataç�
 
 - Módulo 02: Funções e Classes
 Falar sobre orientação à objetos (herança, composição, polimorfismo, adição de métodos nas classes)
+    Tópico 1: Funções e Classes
+	-Herança
+	-Composição
+	-Polimorfismo
+	-Métodos de Classe
+	-Métodos de instância
+	-Métodos Estáticos
+
 - Módulo 03: Testes com Python
 Realização de testes unitários e outros níveis de teste e usar o pytest praticando o TDD
 - Módulo 04: Backend com Python
