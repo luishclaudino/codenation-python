@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisclaudino/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisclaudino/codenation/python-7/.hypothesis/examples')
+rootdir: /home/luisclaudino/codenation/python-7
+plugins: doctestplus-0.5.0, arraydiff-0.3, openfiles-0.4.0, remotedata-0.3.2, astropy-header-0.1.2, hypothesis-5.5.4
+collecting ... collected 6 items
+
+test_main.py::test_get_temperature_by_lat_lng PASSED                     [ 16%]
+test_main.py::test_wrong_key PASSED                                      [ 33%]
+test_main.py::test_without_one_request_parameter PASSED                  [ 50%]
+test_main.py::test_convert_to_celsius_function PASSED                    [ 66%]
+test_main.py::test_invalid_latitude PASSED                               [ 83%]
+test_main.py::test_invalid_longitude PASSED                              [100%]
+
+=============================== warnings summary ===============================
+/home/luisclaudino/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py:436
+  /home/luisclaudino/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py:436: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
+  Add 'junit_family=xunit1' to your pytest.ini file to keep the current format in future versions of pytest and silence this warning.
+    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+---- generated xml file: /home/luisclaudino/codenation/python-7/output.xml -----
+========================= 6 passed, 1 warning in 0.15s =========================

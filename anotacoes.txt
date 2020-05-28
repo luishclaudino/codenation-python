@@ -25,18 +25,61 @@ Fundamentos básicos como estruturas de dados, repetição, decisão, formataç�
     Tópico 2
     - Como escrever código Python usando PEP8
 
+    - Links importantes:
+    - Documentação do Python: https://www.python.org/doc/
+    - Visualizador de Execução: http://pythontutor.com/visualize.html#mode=edit
+    - Timestamp: https://www.epochconverter.com/
+    - Strings: https://realpython.com/python-strings/
+    - Dicas de Python intermediário: https://book.pythontips.com/en/latest/
+    - Escrever em PEP8: https://realpython.com/python-pep8/
+    - Ambientes virtuais de Python: https://pythonacademy.com.br/blog/python-e-virtualenv-como-programar-em-ambientes-virtuais
+
 - Módulo 02: Funções e Classes
 Falar sobre orientação à objetos (herança, composição, polimorfismo, adição de métodos nas classes)
     Tópico 1: Funções e Classes
-	-Herança
-	-Composição
-	-Polimorfismo
-	-Métodos de Classe
-	-Métodos de instância
-	-Métodos Estáticos
+	- Herança
+	- Composição
+	- Polimorfismo
+	- Métodos de Classe
+	- Métodos de instância
+	- Métodos Estáticos
+
+    Links importantes:
+    - Programação orientada ao objeto em Python: Como fazer composição em python: https://professormarcolan.com.br/programacao-orientada-ao-objeto-em-python-recurso-do-composicao/
+    - Objetos Pythonicos: http://turing.com.br/material/oopy/oopy-t4a2.pdf
+    - POO com Python 3: https://sites.google.com/site/rafaeluft/poo-com-python
+    - Python Object Oriented Programming: https://www.programiz.com/python-programming/object-oriented-programming
+    - Object-Oriented Programming (OOP) in Python 3: https://realpython.com/python3-object-oriented-programming/
 
 - Módulo 03: Testes com Python
 Realização de testes unitários e outros níveis de teste e usar o pytest praticando o TDD
+    Tópico 1: Testes com Python
+    - Tipos de testes
+        - Sistema: Testes de aceitação que testa o sistema como um todo e é mais caro e demorado
+        - Integração: Testa a integração entre as diversas partes do sistema como classes complexas e módulos.
+        - Unitário: Testa estruturas básicas do sistema como função e classes mais simples, é mais barato e rápido de se fazer.
+    - Porque usar TDD?
+        - Desenvolvimento orientado a testes.
+        - É uma maneira de desenvolver pensando em testes.
+        - Guia o design da aplicação.
+        - Nos ajuda a entender melhor o problema que estamos resolvendo.
+        - Garante uma boa qualidade na aplicação dando segurança para alterá-la.
+        - Ciclo de desenvolvimento usando TDD:
+            - Escreva um teste.
+            - Implementa o mínimo para que o teste passe.
+            - Refatore.
+            - Repita.
+    - Pytest
+
+    Links importantes:
+    - In Tests We Trust — TDD with Python: https://code.likeagirl.io/in-tests-we-trust-tdd-with-python-af69f47e6932
+    - Unit Testing & Test-Driven Development: https://python-3-patterns-idioms-test.readthedocs.io/en/latest/UnitTesting.html
+    - Obey the Testing Goat! TDD for the Web, with Python, Selenium, Django, JavaScript and pals: https://www.obeythetestinggoat.com/pages/book.html
+    - Test Driven Development with Pytest: https://afroshok.com/articles/test-driven-development-pytest/
+    - Part III – Create a Home Page with TDD, Staticfiles and Templates settings: http://www.marinamele.com/taskbuster-django-tutorial/create-home-page-with-tdd-staticfiles-templates-settings
+    - Test Driven Development with Django: https://medium.com/the-andela-way/test-driven-development-with-django-ccb179171dcd
+    - A simple introduction to Test Driven Development with Python: https://www.freecodecamp.org/news/learning-to-test-with-python-997ace2d8abe/
+
 - Módulo 04: Backend com Python
 Protocolos de Comunicação HTTP TCP, conceitos básicos de arquiteturas distribuídas, segurança de API's e sistemas web
 - Módulo 05: Django
