@@ -82,15 +82,64 @@ Realização de testes unitários e outros níveis de teste e usar o pytest prat
 
 - Módulo 04: Backend com Python
 Protocolos de Comunicação HTTP TCP, conceitos básicos de arquiteturas distribuídas, segurança de API's e sistemas web
+    Tópico 1: Backend com Python
+    - Protocolos de comunicação (HTTP, TCP, UDP, Socket)
+    - Conceitos de arquitetura distribuída
+    - Conceitos segurança de APIs:
+        - Autenticação
+        - Tokens
+        - Sessões
+
+    Links importantes:
+    - Um pouco do protocolo HTTP - https://www.vivaolinux.com.br/artigo/Um-pouco-do-protocolo-HTTP?pagina=1
+    - Introduction to Distributed System Design - http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html
+    - Web API Security - https://www.imperva.com/learn/application-security/web-api-security/
+    - REST Security Cheat Sheet - https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+    - Tutorial Django Parte 7: Sessões - https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/Sess%C3%B5es
+    - Suporte a serviços diferenciados em servidores web: modelos e algoritmos - http://www.deinf.ufma.br/~mario/producao/tese_swds.pdf
+    - Cross site scripting (XSS) attacks - https://www.imperva.com/learn/application-security/cross-site-scripting-xss-attacks/
+    - How to Adjust TCP Window Size to Improve Network Performance - https://www.auvik.com/franklymsp/blog/tcp-window-size/
+
 - Módulo 05: Django
 Detalhes sobre o Django e como configurar URLS, views, validações
+	Tópico 1: Django
+	- Models
+	- Urls
+	- Views
+	- Settings
+	- Validações
+	- Middlewares
+
+	Anotações:
+	- Comando que inicializa o projeto django com nome ecomm na pasta atual: django-admin startproject ecomm .
+	- Executa as migrations: python manage.py makemigrations
+	- acessa aqui: http://127.0.0.1:8000/products/list
+	- Middlewares são interessantes para ver se um usuario é valido, iniciar uma sessão no cache, registrar o que o usuário está fazendo na
+	aplicação, barrar o usuário se algo não estiver certo por exemplo utilizar um token nos cabeçalhos de requisição. Realizar tratamento
+	de erros
+	- Comando para criar o usuário admin: python3 manage.py createsuperuser
+
+	Links importantes:
+	- Documentação oficial: https://www.djangoproject.com/
+	- Videos da conferencia de python: https://pyvideo.org/
+	- Django: o framework web para perfeccionistas com prazos: https://www.infoq.com/br/presentations/django-framework-web-prazos/
+
+
 - Módulo 06: Django REST Framework
 Para Criação da API de forma muito simples
+
+
 - Módulo 07: Persistência e Cache
 Trabalhar com a ORM do Django e cachear dados para melhorar o desempenho
+
+
 - Módulo 08: Qualidade
 Documentação usando Swagger
+
+
 - Módulo 09: Deploy
 Como fazer o deploy de tudo que estudamos, como fazer um deploy em uma solução de cloud e como fazer Integração contínua
 assim quando fizermos um commit -> iremos buildar e enviar para produção sem precisar de intervenção humana.
+
+
 - Módulo 10: Projeto Final e Apresentação
