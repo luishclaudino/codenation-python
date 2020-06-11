@@ -123,7 +123,10 @@ Detalhes sobre o Django e como configurar URLS, views, validações
 	- Documentação oficial: https://www.djangoproject.com/
 	- Videos da conferencia de python: https://pyvideo.org/
 	- Django: o framework web para perfeccionistas com prazos: https://www.infoq.com/br/presentations/django-framework-web-prazos/
-
+    - Aula 5 - Entendendo um projeto Django: https://www.youtube.com/watch?v=LndJOSwRYOM
+    - Entendendo o Django: https://www.profissionaisti.com.br/2009/04/entendendo-o-django/
+    - Django Tutorial Parte 2: Criando o "esqueleto" de um site: https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/skeleton_website
+    - Introdução ao Django — Começando um projeto do zero: https://medium.com/@thais.ribeiro/introdu%C3%A7%C3%A3o-ao-django-come%C3%A7ando-um-projeto-do-zero-57a953e0614b
 
 - Módulo 06: Django REST Framework
 Para Criação da API de forma muito simples
