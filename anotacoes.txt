@@ -128,9 +128,33 @@ Detalhes sobre o Django e como configurar URLS, views, validações
     - Django Tutorial Parte 2: Criando o "esqueleto" de um site: https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Django/skeleton_website
     - Introdução ao Django — Começando um projeto do zero: https://medium.com/@thais.ribeiro/introdu%C3%A7%C3%A3o-ao-django-come%C3%A7ando-um-projeto-do-zero-57a953e0614b
 
+	Dica do Luis Guerreiro
+	Como definir uma custom model para fazer o intermediário entre duas models em uma relação m2m > https://docs.djangoproject.com/en/3.0/ref/models/fields/#django.db.models.ManyToManyField.through
+
+	Vi alguns CR onde criaram uma função para validar a escolha do level, porém o django já fornece uma maneira mais simples de resolver, utilizando um argumento "choices" > https://docs.djangoproject.com/en/3.0/ref/models/fields/#choices
+
+	É uma boa prática no django utilizar o nome da model para definir a relação, ao invés do objeto, dessa forma é possível criar uma relação com uma model ainda não definida, ou seja, evita imports ciclicos >> https://docs.djangoproject.com/en/3.0/ref/models/fields/#foreignkey
+
+	https://www.it-swarm.dev/pt/python/importacoes-circulares-ou-ciclicas-em-python/957902329/
+
+	https://stackabuse.com/python-circular-imports/
+
+
 - Módulo 06: Django REST Framework
 Para Criação da API de forma muito simples
+	Tópico 1: Django REST Framework
+	- Conhecendo o Projeto
+	- Serialization
+	- Requests e Responses
+	- Class based Views
+	- Authentication e Premissions
+	- Viewset e routes
 
+	Links importantes:
+	- How to write an API in 3 lines of code with Django REST framework: https://medium.com/crowdbotics/how-to-write-an-api-in-3-lines-of-code-with-django-rest-framework-59b0971edfa4
+	- Let’s build an API with Django REST Framework: https://medium.com/backticks-tildes/lets-build-an-api-with-django-rest-framework-32fcf40231e5
+	- O que é API? REST e RESTful? Conheça as definições e diferenças!: https://becode.com.br/o-que-e-api-rest-e-restful/
+	- Learn REST: A RESTful Tutorial: https://www.restapitutorial.com/
 
 - Módulo 07: Persistência e Cache
 Trabalhar com a ORM do Django e cachear dados para melhorar o desempenho
