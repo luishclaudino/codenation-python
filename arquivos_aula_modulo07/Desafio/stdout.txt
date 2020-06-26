@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisclaudino/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisclaudino/codenation/python-11/.hypothesis/examples')
+rootdir: /home/luisclaudino/codenation/python-11
+plugins: doctestplus-0.5.0, arraydiff-0.3, openfiles-0.4.0, remotedata-0.3.2, astropy-header-0.1.2, hypothesis-5.5.4
+collecting ... collected 7 items
+
+test_main.py::TestChallenge10::test_1 PASSED                             [ 14%]
+test_main.py::TestChallenge10::test_2 PASSED                             [ 28%]
+test_main.py::TestChallenge10::test_3 PASSED                             [ 42%]
+test_main.py::TestChallenge10::test_4 PASSED                             [ 57%]
+test_main.py::TestChallenge10::test_5 PASSED                             [ 71%]
+test_main.py::TestChallenge10::test_6 PASSED                             [ 85%]
+test_main.py::TestChallenge10::test_7 PASSED                             [100%]
+
+============================== 7 passed in 0.28s ===============================
