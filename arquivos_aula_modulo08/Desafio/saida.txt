@@ -1,0 +1,244 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /home/luisclaudino/codenation/python-12
+plugins: doctestplus-0.5.0, arraydiff-0.3, openfiles-0.4.0, remotedata-0.3.2, astropy-header-0.1.2, hypothesis-5.5.4
+collected 183 items
+
+test_main2.py ..........................F...FF..............F.F.F....... [ 31%]
+...............................FFF...........FFF.....FF................. [ 71%]
+.....................................................                    [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_2590 ___________________________________
+
+    def test_2590():
+>       assert document.get('types').get('Event').get('properties').get('shelved')
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923620d20>('shelved')
+E        +    where <built-in method get of dict object at 0x7f4923620d20> = {'agent_id': 'integer', 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}.get
+E        +      where {'agent_id': 'integer', 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...} = <built-in method get of dict object at 0x7f49236201e0>('properties')
+E        +        where <built-in method get of dict object at 0x7f49236201e0> = {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'}.get
+E        +          where {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'} = <built-in method get of dict object at 0x7f492392a5f0>('Event')
+E        +            where <built-in method get of dict object at 0x7f492392a5f0> = {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...}.get
+E        +              where {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...} = <built-in method get of dict object at 0x7f492392a640>('types')
+E        +                where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:174: AssertionError
+__________________________________ test_2765 ___________________________________
+
+    def test_2765():
+>       assert document.get('types').get('Event').get('example').get('data')
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923620d70>('data')
+E        +    where <built-in method get of dict object at 0x7f4923620d70> = {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23, 'level': 'Critical', ...}.get
+E        +      where {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23, 'level': 'Critical', ...} = <built-in method get of dict object at 0x7f49236201e0>('example')
+E        +        where <built-in method get of dict object at 0x7f49236201e0> = {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'}.get
+E        +          where {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'} = <built-in method get of dict object at 0x7f492392a5f0>('Event')
+E        +            where <built-in method get of dict object at 0x7f492392a5f0> = {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...}.get
+E        +              where {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...} = <built-in method get of dict object at 0x7f492392a640>('types')
+E        +                where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:198: AssertionError
+__________________________________ test_2055 ___________________________________
+
+    def test_2055():
+>       assert document.get('types').get('Event').get('example').get('shelve')
+E       assert False
+E        +  where False = <built-in method get of dict object at 0x7f4923620d70>('shelve')
+E        +    where <built-in method get of dict object at 0x7f4923620d70> = {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23, 'level': 'Critical', ...}.get
+E        +      where {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23, 'level': 'Critical', ...} = <built-in method get of dict object at 0x7f49236201e0>('example')
+E        +        where <built-in method get of dict object at 0x7f49236201e0> = {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'}.get
+E        +          where {'discriminator': 'event_id', 'example': {'agent_id': 5, 'date': datetime.datetime(2020, 7, 1, 21, 0), 'event_id': 23,..., 'date': 'datetime-only', 'event_id': 'integer', 'level': {'maxLength': 20, 'type': 'string'}, ...}, 'type': 'object'} = <built-in method get of dict object at 0x7f492392a5f0>('Event')
+E        +            where <built-in method get of dict object at 0x7f492392a5f0> = {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...}.get
+E        +              where {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...} = <built-in method get of dict object at 0x7f492392a640>('types')
+E        +                where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:202: AssertionError
+__________________________________ test_2670 ___________________________________
+
+    def test_2670():
+>       assert document.get('types').get('User').get('properties').get('group_id')
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923620b90>('group_id')
+E        +    where <built-in method get of dict object at 0x7f4923620b90> = {'email': {'maxLength': 254, 'type': 'string'}, 'last_login': {'type': 'date-only'}, 'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}, ...}.get
+E        +      where {'email': {'maxLength': 254, 'type': 'string'}, 'last_login': {'type': 'date-only'}, 'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}, ...} = <built-in method get of dict object at 0x7f4923620410>('properties')
+E        +        where <built-in method get of dict object at 0x7f4923620410> = {'discriminator': 'user_id', 'properties': {'email': {'maxLength': 254, 'type': 'string'}, 'last_login': {'type': 'dat..., 'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}, ...}, 'type': 'object'}.get
+E        +          where {'discriminator': 'user_id', 'properties': {'email': {'maxLength': 254, 'type': 'string'}, 'last_login': {'type': 'dat..., 'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}, ...}, 'type': 'object'} = <built-in method get of dict object at 0x7f492392a5f0>('User')
+E        +            where <built-in method get of dict object at 0x7f492392a5f0> = {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...}.get
+E        +              where {'Agent': {'discriminator': 'agent_id', 'example': {'address': 'api.com', 'agent_id': 15, 'environment': 'Environment ...oup Name'}, 'properties': {'group_id': 'integer', 'name': {'maxLength': 20, 'type': 'string'}}, 'type': 'object'}, ...} = <built-in method get of dict object at 0x7f492392a640>('types')
+E        +                where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:274: AssertionError
+__________________________________ test_1358 ___________________________________
+
+    def test_1358():
+>       assert document.get('/auth/token').get('post').get('description')
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f492361ffa0>('description')
+E        +    where <built-in method get of dict object at 0x7f492361ffa0> = {'body': {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 5...n/json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}.get
+E        +      where {'body': {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 5...n/json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}} = <built-in method get of dict object at 0x7f49236206e0>('post')
+E        +        where <built-in method get of dict object at 0x7f49236206e0> = {'description': 'Obter o token de autenticação.', 'post': {'body': {'application/json': {'properties': {'name': {'maxL.../json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}}.get
+E        +          where {'description': 'Obter o token de autenticação.', 'post': {'body': {'application/json': {'properties': {'name': {'maxL.../json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}} = <built-in method get of dict object at 0x7f492392a640>('/auth/token')
+E        +            where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:282: AssertionError
+__________________________________ test_2715 ___________________________________
+
+    def test_2715():
+>       assert document.get('/auth/token').get('post').get('body').get('application/json').get('username')
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625960>('username')
+E        +    where <built-in method get of dict object at 0x7f4923625960> = {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}}}.get
+E        +      where {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}}} = <built-in method get of dict object at 0x7f4923620dc0>('application/json')
+E        +        where <built-in method get of dict object at 0x7f4923620dc0> = {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}}}}.get
+E        +          where {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 50, 'type': 'string'}}}} = <built-in method get of dict object at 0x7f492361ffa0>('body')
+E        +            where <built-in method get of dict object at 0x7f492361ffa0> = {'body': {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 5...n/json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}.get
+E        +              where {'body': {'application/json': {'properties': {'name': {'maxLength': 50, 'type': 'string'}, 'password': {'maxLength': 5...n/json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}} = <built-in method get of dict object at 0x7f49236206e0>('post')
+E        +                where <built-in method get of dict object at 0x7f49236206e0> = {'description': 'Obter o token de autenticação.', 'post': {'body': {'application/json': {'properties': {'name': {'maxL.../json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}}.get
+E        +                  where {'description': 'Obter o token de autenticação.', 'post': {'body': {'application/json': {'properties': {'name': {'maxL.../json': {'type': 'Auth'}}}, 400: {'body': {'application/json': {'example': '{"error": "Erro de autenticação."}\n'}}}}}} = <built-in method get of dict object at 0x7f492392a640>('/auth/token')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:294: AssertionError
+__________________________________ test_2645 ___________________________________
+
+    def test_2645():
+>       assert document.get('/agents').get('/{id}/events').get('post').get('body').get(201)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625c80>(201)
+E        +    where <built-in method get of dict object at 0x7f4923625c80> = {'application/json': 'Event[]'}.get
+E        +      where {'application/json': 'Event[]'} = <built-in method get of dict object at 0x7f49236250a0>('body')
+E        +        where <built-in method get of dict object at 0x7f49236250a0> = {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('post')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:510: AssertionError
+__________________________________ test_2185 ___________________________________
+
+    def test_2185():
+>       assert document.get('/agents').get('/{id}/events').get('post').get('body').get(401)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625c80>(401)
+E        +    where <built-in method get of dict object at 0x7f4923625c80> = {'application/json': 'Event[]'}.get
+E        +      where {'application/json': 'Event[]'} = <built-in method get of dict object at 0x7f49236250a0>('body')
+E        +        where <built-in method get of dict object at 0x7f49236250a0> = {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('post')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:514: AssertionError
+__________________________________ test_2580 ___________________________________
+
+    def test_2580():
+>       assert document.get('/agents').get('/{id}/events').get('post').get('body').get(404)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625c80>(404)
+E        +    where <built-in method get of dict object at 0x7f4923625c80> = {'application/json': 'Event[]'}.get
+E        +      where {'application/json': 'Event[]'} = <built-in method get of dict object at 0x7f49236250a0>('body')
+E        +        where <built-in method get of dict object at 0x7f49236250a0> = {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': 'Event[]'}, 'description': 'Adição de mais de um evento à um agente específico.', 'respo...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('post')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:518: AssertionError
+__________________________________ test_2035 ___________________________________
+
+    def test_2035():
+>       assert document.get('/agents').get('/{id}/events').get('put').get('body').get(200)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625d70>(200)
+E        +    where <built-in method get of dict object at 0x7f4923625d70> = {'application/json': {'application/json': 'Event[]'}}.get
+E        +      where {'application/json': {'application/json': 'Event[]'}} = <built-in method get of dict object at 0x7f4923625140>('body')
+E        +        where <built-in method get of dict object at 0x7f4923625140> = {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('put')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:570: AssertionError
+__________________________________ test_2855 ___________________________________
+
+    def test_2855():
+>       assert document.get('/agents').get('/{id}/events').get('put').get('body').get(401)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625d70>(401)
+E        +    where <built-in method get of dict object at 0x7f4923625d70> = {'application/json': {'application/json': 'Event[]'}}.get
+E        +      where {'application/json': {'application/json': 'Event[]'}} = <built-in method get of dict object at 0x7f4923625140>('body')
+E        +        where <built-in method get of dict object at 0x7f4923625140> = {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('put')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:574: AssertionError
+__________________________________ test_2450 ___________________________________
+
+    def test_2450():
+>       assert document.get('/agents').get('/{id}/events').get('put').get('body').get(404)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625d70>(404)
+E        +    where <built-in method get of dict object at 0x7f4923625d70> = {'application/json': {'application/json': 'Event[]'}}.get
+E        +      where {'application/json': {'application/json': 'Event[]'}} = <built-in method get of dict object at 0x7f4923625140>('body')
+E        +        where <built-in method get of dict object at 0x7f4923625140> = {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': {'application/json': 'Event[]'}}, 'description': 'Alteração dos eventos de um agente esp...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('put')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:578: AssertionError
+__________________________________ test_2420 ___________________________________
+
+    def test_2420():
+>       assert document.get('/agents').get('/{id}/events').get('delete').get('body').get(200)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625e10>(200)
+E        +    where <built-in method get of dict object at 0x7f4923625e10> = {'application/json': 'Event[]'}.get
+E        +      where {'application/json': 'Event[]'} = <built-in method get of dict object at 0x7f4923625190>('body')
+E        +        where <built-in method get of dict object at 0x7f4923625190> = {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específico.', 'res...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específico.', 'res...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('delete')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:602: AssertionError
+__________________________________ test_2605 ___________________________________
+
+    def test_2605():
+>       assert document.get('/agents').get('/{id}/events').get('delete').get('body').get(401)
+E       assert None
+E        +  where None = <built-in method get of dict object at 0x7f4923625e10>(401)
+E        +    where <built-in method get of dict object at 0x7f4923625e10> = {'application/json': 'Event[]'}.get
+E        +      where {'application/json': 'Event[]'} = <built-in method get of dict object at 0x7f4923625190>('body')
+E        +        where <built-in method get of dict object at 0x7f4923625190> = {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específico.', 'res...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}.get
+E        +          where {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específico.', 'res...esta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']} = <built-in method get of dict object at 0x7f4923620870>('delete')
+E        +            where <built-in method get of dict object at 0x7f4923620870> = {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}}.get
+E        +              where {'delete': {'body': {'application/json': 'Event[]'}, 'description': 'Remoção de mais de um evento de um agente específ...sta ação."}\n'}}, 404: {'body': {'application/json': '{"error": "Agente não encontrado."}\n'}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f4923610870>('/{id}/events')
+E        +                where <built-in method get of dict object at 0x7f4923610870> = {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}}.get
+E        +                  where {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {'application/json': '{...lication/json': {'example': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}}, 'securedBy': ['JWT']}} = <built-in method get of dict object at 0x7f492392a640>('/agents')
+E        +                    where <built-in method get of dict object at 0x7f492392a640> = {'/agents': {'/{id}': {'delete': {'description': 'Remoção de agente pelo id.', 'responses': {200: {'body': {...}}, 401...: {'application/json': '{"error": "Você não está autorizado para fazer esta ação."}\n'}}}, 'securedBy': ['JWT']}}, ...}.get
+
+test_main2.py:606: AssertionError
+=============================== warnings summary ===============================
+test_main2.py:6
+  /home/luisclaudino/codenation/python-12/test_main2.py:6: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+    document = yaml.load(doc)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+================== 14 failed, 169 passed, 1 warning in 0.77s ===================

@@ -179,16 +179,38 @@ Trabalhar com a ORM do Django e cachear dados para melhorar o desempenho
 	Links Recomendados:
 	- Django Models: O Guia “Definitivo” das Boas Práticas: https://moacirmoda.com/django-models-o-guia-definitivo-das-boas-praticas/
 	- Django ORM Optimization Tips: http://concisecoder.io/2018/11/04/django-orm-optimization-tips/
-    - Django ORM Relationships Cheat Sheet: https://hackernoon.com/django-orm-relationships-cheat-sheet-14433d6cf68c
+    	- Django ORM Relationships Cheat Sheet: https://hackernoon.com/django-orm-relationships-cheat-sheet-14433d6cf68c
 	- Django ORM Cookbook Documentation: https://buildmedia.readthedocs.org/media/pdf/django-orm-cookbook/latest/django-orm-cookbook.pdf
-    - Como funciona o ORM do Django: https://www.gilenofilho.com.br/como-funciona-o-orm-do-django/
+    	- Como funciona o ORM do Django: https://www.gilenofilho.com.br/como-funciona-o-orm-do-django/
 	- Visualizando query SQL a partir do ORM Django: https://medium.com/@beatrizuezu/visualizando-query-sql-a-partir-do-orm-django-5771370a9c55
 	- Caching in Django With Redis: https://realpython.com/caching-in-django-with-redis/
 
 
 - Módulo 08: Qualidade
-Documentação usando Swagger
-
+Documentação usando Swagger e Sfinx (multiplos propósitos)
+    Anotações:
+    - Explicar de forma geral o que as funções fazem sem muitos detalhes.
+    - Utilizar as três aspas """ em baixo da definição
+    - Colocar no inicio do arquivo para fazer uma documentação do módulo
+    - def with_text(self, text: str) -> QuerySet:
+        text: str indica que o input é do tipo string
+        -> QuerySet indica que o retorno é um queryset
+    - Swagger: escreve a documentação em yaml com uma API Interativa, mostra todos os endpoint que a aplicação possui
+    - Sphinx:
+        Instalar: pip install sphinx
+        sphinx-quickstart FOLDERNAME -p NOMEDOPROJETO
+        Não quero separar os diretorios
+        Autor
+        Release
+        Deixar uma lingua que você queira
+        cd docs
+        make html -> compilar o projeto em html
+    - Ramilificando as suas APIs: https://klauslaube.com.br/2017/01/31/ramilificando-as-suas-apis.html
+    - Swagger: Como gerar uma documentação interativa para API REST: http://www.matera.com/blog/post/swagger-como-gerar-uma-documentacao-interativa-para-api-rest
+    - Introdução ao RAML - https://medium.com/renato-de-oliveira/introdu%C3%A7%C3%A3o-ao-raml-ac47d2fd5e22
+    - Documentação simples e sofisticada com Sphinx - https://www.ibm.com/developerworks/br/library/os-sphinx-documentation/index.html
+    - API Designer: https://github.com/mulesoft/api-designer
+    - Design your API: https://raml.org/developers/design-your-api
 
 - Módulo 09: Deploy
 Como fazer o deploy de tudo que estudamos, como fazer um deploy em uma solução de cloud e como fazer Integração contínua

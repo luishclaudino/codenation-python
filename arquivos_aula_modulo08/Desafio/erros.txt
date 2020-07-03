@@ -1,0 +1,143 @@
+Erro 1 ===================================================================================
+# Este teste declara como:
+def test_2590():
+    assert document.get('types').get('Event').get('properties').get('shelved')
+
+# Na hora do exemplo está com o nome diferente
+def test_2055():
+    assert document.get('types').get('Event').get('example').get('shelve')
+
+# Na foto do banco de dados no desafio este campo é chamado de shelve
+
+Erro 2 ===================================================================================
+# Os erros estão fora do responses e está assim:
+def test_2505():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get('responses')
+
+
+def test_2645():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get(201)
+
+
+def test_2185():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get(401)
+
+
+def test_2580():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get(404)
+
+# Troca colocar os erros dentro do responses
+def test_2505():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get('responses')
+
+
+def test_2645():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get('responses').get(201)
+
+
+def test_2185():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get('responses').get(401)
+
+
+def test_2580():
+    assert document.get('/agents').get('/{id}/events').get('post').get('body').get('responses').get(404)
+
+Erro 3 =========================================================================
+# Aqui faltou um responses e colocar os erros dentro:
+def test_2680():
+    assert document.get('/agents').get('/{id}/events').get('put').get('body').get('application/json')
+
+
+def test_2035():
+    assert document.get('/agents').get('/{id}/events').get('put').get('body').get(200)
+
+
+def test_2855():
+    assert document.get('/agents').get('/{id}/events').get('put').get('body').get(401)
+
+
+def test_2450():
+    assert document.get('/agents').get('/{id}/events').get('put').get('body').get(404)
+
+
+#Alteração sugerida:
+def test_2680():
+    assert document.get('/agents').get('/{id}/events').get('put').get('body').get('application/json')
+
+def test_9999():
+    assert document.get('/agents').get('/{id}/events').get('put').get('responses')
+
+def test_2035():
+    assert document.get('/agents').get('/{id}/events').get('put').get('responses').get(200)
+
+
+def test_2855():
+    assert document.get('/agents').get('/{id}/events').get('put').get('responses').get(401)
+
+
+def test_2450():
+    assert document.get('/agents').get('/{id}/events').get('put').get('responses').get(404)
+
+
+
+Erro 4 ========================================================================
+# Erros dentro do body:
+
+def test_2550():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('body').get('application/json')
+
+
+def test_2420():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('body').get(200)
+
+
+def test_2605():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('body').get(401)
+
+
+def test_2130():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('body').get(404)
+
+# Retirar de dentro do body e colocar no responses:
+
+def test_2550():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('body').get('application/json')
+
+def test_9998():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('responses')
+
+def test_2420():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('responses').get(200)
+
+
+def test_2605():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('responses').get(401)
+
+
+def test_2130():
+    assert document.get('/agents').get('/{id}/events').get('delete').get('responses').get(404)
+
+Erro 5 ================================================================================
+# Na foto do banco de dados é date não data
+def test_2765():
+    assert document.get('types').get('Event').get('example').get('data')
+
+# Correção 
+def test_2765():
+    assert document.get('types').get('Event').get('example').get('date')
+
+Erro 6 =====================================================================
+# Tinha que ter um properties no meio do caminho entre o json e o username
+def test_2365():
+    assert document.get('/auth/token').get('post').get('body').get('application/json')
+
+def test_9879():
+    assert document.get('/auth/token').get('post').get('body').get('application/json').get('properties')
+
+def test_2715():
+    assert document.get('/auth/token').get('post').get('body').get('application/json').get('properties').get('username')
+
+
+def test_2310():
+    assert document.get('/auth/token').get('post').get('body').get('application/json').get('properties').get('password')
+
