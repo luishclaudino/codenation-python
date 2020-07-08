@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1 -- /home/luisclaudino/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/luisclaudino/codenation/python-13/.hypothesis/examples')
+rootdir: /home/luisclaudino/codenation/python-13
+plugins: doctestplus-0.5.0, arraydiff-0.3, openfiles-0.4.0, remotedata-0.3.2, astropy-header-0.1.2, hypothesis-5.5.4
+collecting ... collected 7 items
+
+test_submit.py::test_1 PASSED                                            [ 14%]
+test_submit.py::test_2 PASSED                                            [ 28%]
+test_submit.py::test_3 PASSED                                            [ 42%]
+test_submit.py::test_4 PASSED                                            [ 57%]
+test_submit.py::test_5 PASSED                                            [ 71%]
+test_submit.py::test_6 PASSED                                            [ 85%]
+test_submit.py::test_7 PASSED                                            [100%]
+
+=============================== warnings summary ===============================
+/home/luisclaudino/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py:436
+  /home/luisclaudino/anaconda3/lib/python3.7/site-packages/_pytest/junitxml.py:436: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
+  Add 'junit_family=xunit1' to your pytest.ini file to keep the current format in future versions of pytest and silence this warning.
+    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
+
+test_submit.py:5
+  /home/luisclaudino/codenation/python-13/test_submit.py:5: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+    document = yaml.load(config)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+---- generated xml file: /home/luisclaudino/codenation/python-13/output.xml ----
+======================== 7 passed, 2 warnings in 0.25s =========================

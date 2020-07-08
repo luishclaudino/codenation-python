@@ -216,5 +216,34 @@ Documentação usando Swagger e Sfinx (multiplos propósitos)
 Como fazer o deploy de tudo que estudamos, como fazer um deploy em uma solução de cloud e como fazer Integração contínua
 assim quando fizermos um commit -> iremos buildar e enviar para produção sem precisar de intervenção humana.
 
+    Anotações:
+    - pip install gunicorn whitenoise psycopg2 dj_database_url
+    - gunicorn: web server para rodar aplicações python que utiliza o protogolo wsgi.
+    - whitenoise: Ajuda a servir arquivos estáticos sem precisar configurar algo externo.
+    - psycopg2: driver python para acessar o postgreSQL
+    - dj_database_url: Auxiliar a configurar a url do banco
+    - Para gerar os requirements usar o comando: pip freeze > requirements.txt
+    - No ProcFile: A cada 1200 requisições ele vai reciclar o worker para caso tenha algum problema de memória, se tiver é só reduzir porém pode ter problemas de desempenho.
+    - logar: heroku login
+    - criar seu projeto: heroku create lhcs-acelera-ecomm
+    - connectar com o projeto: heroku git:remote -a lhcs-acelera-ecomm
+    - criar o banco de dados postgres: heroku addons:create heroku-postgresql:hobby-dev -a lhcs-acelera-ecomm
+    - configuração de ambiente: heroku config:set DJANGO_SETTINGS_MODULE=ecomm.settings_prod -a lhcs-acelera-ecomm
+    - Para listar as envs criadas: heroku config
+    - Fazer um push do repositório para o heroku (não esquecer de fazer os commits antes): git push heroku master
+    - Migrar o banco de dados: heroku run python manage.py migrate
+    - Caso precise, criar um super usuário para o acesso ao admin: heroku run python manage.py createsuperuser
+    -
+
+    - Links importantes:
+    - NIC.br - Núcleo de Informação e Coordenação do Ponto BR: https://nic.br/
+    - DNS e DNSSEC: https://registro.br/tecnologia/dnssec/dns-e-dnssec/
+    - Deploy para desenvolvedores iniciantes: 4 passos: https://configr.com/blog/deploy-em-4-passos-para-desenvolvedores-iniciantes/
+    - Gunicorn - Python WSGI HTTP Server for UNIX: https://gunicorn.org/
+    - The uWSGI project — uWSGI documentation: https://uwsgi-docs.readthedocs.io/en/latest/index.html
+    - Guia para Deploy Django Python 3: https://fernandofreitasalves.com/guia-para-deploy-django-python/
+    - Deploy de uma aplicação Django no Heroku: https://www.treinaweb.com.br/blog/deploy-de-uma-aplicacao-django-no-heroku/
+    - Building a Python Project: https://docs.travis-ci.com/user/languages/python/
+    - Continuous Integration With Python: An Introduction – Real Python: https://realpython.com/python-continuous-integration/
 
 - Módulo 10: Projeto Final e Apresentação
